@@ -1,0 +1,97 @@
+// trang place details
+.baner_place_details {
+    position: relative;
+
+    >img {
+        width: 100%;
+    }
+}
+
+// nội dung chi tiết
+.content_details {
+    padding: 40px 0;
+}
+
+.content_text {
+    padding-top: 40px;
+    display: none;
+
+    &.active {
+        display: block;
+    }
+
+    .text_details {
+        font-size: 20px;
+        line-height: 1.25;
+        color: $txt_black;
+
+        b {
+            display: block;
+        }
+    }
+
+    >img {
+        margin: 30px 0;
+        display: block;
+    }
+}
+
+
+
+#library {
+    .grid-item {
+        float: left;
+        width: 30%;
+    }
+
+    .grid-item--width2 {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #map {
+        iframe {
+            max-width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .content_details .offset-2 {
+        max-width: 100%;
+        margin: 0;
+        flex: none;
+    }
+
+}
+
+@media only screen and (max-width: 640px) {
+    .tt_address.tt_style2 {
+        font-size: 30px;
+
+        >.click_view {
+            font-size: 14px;
+
+            a::after {
+                font-size: 14px;
+            }
+        }
+
+    }
+
+    .nav__bar.nav_style1 {
+        display: block;
+    }
+
+    .content_text .text_details,
+    .nav__bar.nav_style1 .nav_link {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .nav__bar.nav_style1 .nav_item{
+        text-align: center;
+    }
+
+       
+}
