@@ -172,10 +172,6 @@ $(document).ready(function () {
         $(".header").toggleClass("active");        
     });
 });
-// $(window).on('load',function(){
-//     $('#myModal').modal('show');
-//     $(".modal-dialog").addClass("animated flipInX");    
-// });
 
 
 
